@@ -18,6 +18,25 @@ body {
   overflow: hidden;
   padding: 10px;
 }
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+a:hover {
+  color: aqua;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 .about {
   background-color: rgb(50, 50, 50);
   color: red;
