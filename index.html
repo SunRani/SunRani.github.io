@@ -2,96 +2,43 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Anton%7CBaskervville%7CRaleway&display=swap"
-      rel="stylesheet"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JavaScript Calculator</title>
     <link
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
-    <title>My Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
+
   <body>
-    <header>
-      <nav class="nav-bar" id="navbar">
-        <a href="#welcome">About</a>
-        <a href="#projects">Work</a>
-        <a href="#profile-link">Contact</a>
-      </nav>
-    </header>
-    <section class="about" id="welcome-section">
-      <div class="begin">
-        <h1>Hello I'm Rani!</h1>
-        <p>An aspiring Developer</p>
+    <div class="frame">
+      <div class="screen">
+        <h4 id="eval">&nbsp;</h4>
+        <h4 id="display">0</h4>
       </div>
-    </section>
-    <!-- ----------------------->
-    <section class="project" id="projects">
-      <div class="mid">
-        <h1>Here are some of my projects</h1>
-        <div class="projects">
-          <a
-            class="project-tile"
-            href="Projects\JavaScript_Calculator\index.html"
-            target="_blank"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Posaune.jpg"
-            />
-          </a>
-          <a
-            class="project-tile"
-            href="https://www.freecodecamp.org/fcc352529b8-74b3-44bb-ba04-6e71276fb095"
-            target="_blank"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Posaune.jpg"
-            />
-          </a>
-          <a
-            class="project-tile"
-            href="https://www.freecodecamp.org/fcc352529b8-74b3-44bb-ba04-6e71276fb095"
-            target="_blank"
-          >
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Posaune.jpg"
-            />
-          </a>
-        </div>
+      <div class="buttons">
+        <button class="btn btn-default" id="clear">AC</button>
+        <button class="btn btn-default" id="divide">/</button>
+        <button class="btn btn-default" id="multiply">*</button>
+        <button class="btn btn-default" id="seven">7</button>
+        <button class="btn btn-default" id="eight">8</button>
+        <button class="btn btn-default" id="nine">9</button>
+        <button class="btn btn-default" id="subtract">-</button>
+        <button class="btn btn-default" id="four">4</button>
+        <button class="btn btn-default" id="five">5</button>
+        <button class="btn btn-default" id="six">6</button>
+        <button class="btn btn-default" id="add">+</button>
+        <button class="btn btn-default" id="one">1</button>
+        <button class="btn btn-default" id="two">2</button>
+        <button class="btn btn-default" id="three">3</button>
+        <button class="btn btn-default" id="equals">=</button>
+        <button class="btn btn-default" id="zero">0</button>
+        <button class="btn btn-default" id="decimal">.</button>
       </div>
-    </section>
-    <!-- ----------------------->
-    <section class="link" id="#profile-link">
-      <div class="end">
-        <h1>Let's get in contact!</h1>
-        <div class="icons">
-          <a
-            id="#profile-link"
-            href="https://www.instagram.com/phoenix__rainbow/"
-            target="_blank"
-          >
-            <i class="fab fa-instagram"></i>
-          </a>
-          <a
-            id="#profile-link"
-            href="https://twitter.com/MeatPhoenix"
-            target="_blank"
-          >
-            <i class="fab fa-twitter"></i>
-          </a>
-          <a
-            id="profile-link"
-            href="https://www.linkedin.com/in/rani-son-bb4610208/"
-            target="_blank"
-          >
-            <i class="fab fa-linkedin-in"></i>
-          </a>
-        </div>
-      </div>
-    </section>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
