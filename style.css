@@ -1,91 +1,142 @@
-@media (prefers-reduced-motion: no-preference) {
-  * {
-    scroll-behavior: smooth;
-  }
-}
+/* Global */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  font-family: Verdana, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background: #f7f7f7;
+  color: #222;
 }
 
-.nav-bar {
-  background-color: rgb(225, 50, 50);
-  opacity: 0.8;
-  text-align: right;
-  overflow: hidden;
-  padding: 10px;
-}
-
-a:link {
-  color: green;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-a:hover {
-  color: aqua;
-  background-color: transparent;
-  text-decoration: none;
-}
-
-.about {
-  background-color: rgb(50, 50, 50);
-  color: red;
-  text-align: center;
+/* Navigation */
+.header {
   width: 100%;
+  position: fixed;
+  top: 0;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.nav {
+  max-width: 1100px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+.nav a:hover {
+  color: #ff4d4d;
+}
+
+/* Hero / About Section */
+.hero {
   height: 100vh;
-}
-.begin {
-  position: relative;
-  width: 100%;
-  top: 50%;
+  background: linear-gradient(135deg, #ff4d4d, #ff7d7d);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  text-align: center;
 }
 
-.project {
-  background-color: violet;
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+/* Projects Section */
+.projects-section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.projects-section h2 {
+  font-size: 2.3rem;
+  margin-bottom: 40px;
+}
+
+.project-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  color: #333;
+  transition: 0.3s;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card h3 {
+  padding: 15px;
+  font-size: 1.2rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Contact Section */
+.contact-section {
+  padding: 100px 20px;
+  background: #222;
   color: white;
   text-align: center;
-  height: 100vh;
 }
 
-.mid {
-  position: relative;
-  width: 100%;
-  top: 50%;
+.socials {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  font-size: 2rem;
 }
 
-.projects img {
-  width: 125px;
-  height: 125px;
+.socials a {
+  color: white;
+  transition: 0.3s;
 }
 
-.link {
-  background-color: rgb(50, 50, 50);
-  color: red;
-  text-align: center;
-  height: 100vh;
-}
-
-.icons {
-  display: grid;
-  font-size: 3rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: column;
-  grid-auto-columns: 1fr;
-  background-color: white;
-}
-
-.end {
-  position: relative;
-  width: 100%;
-  top: 50%;
+socials a:hover {
+  color: #ff4d4d;
 }
